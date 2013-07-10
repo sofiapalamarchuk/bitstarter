@@ -7,7 +7,7 @@ var fs = require('fs');
 
 fs.readFile('index.html',function(err,data){
     if (err) return console.log(err.stack);
-    app.get('/', function(request, response) {
+     app.get('/', function(request, response) {
 	response.send(data.toString());
     });
 });
